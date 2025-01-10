@@ -1,97 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Template</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="resume-container">
-        <!-- Header -->
-        <div class="resume-header">
-            <div class="header-left">
-                <h1>John Doe</h1>
-                <p class="subtitle">Software Developer</p>
-            </div>
-            <div class="header-right">
-                <p><strong>Email:</strong> john.doe@example.com</p>
-                <p><strong>Phone:</strong> +1 234 567 890</p>
-                <p><strong>Location:</strong> New York, USA</p>
-            </div>
-        </div>
-
-    
-        <div class="resume-content">
-            
-            <section>
-                <h2>Professional Summary</h2>
-                <p class="summary-text">
-                    Passionate software developer with over 5 years of experience designing and building web applications. Expertise in JavaScript frameworks, responsive design, and delivering robust solutions for clients.
-                </p>
-            </section>
-
-          
-            <section>
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill">HTML & CSS</div>
-                    <div class="skill">JavaScript</div>
-                    <div class="skill">React.js</div>
-                    <div class="skill">Node.js</div>
-                    <div class="skill">Git</div>
-                    <div class="skill">RESTful APIs</div>
-                    <div class="skill">Docker</div>
-                    <div class="skill">Agile Methodologies</div>
-                </div>
-            </section>
-
-   
-            <section>
-                <h2>Work Experience</h2>
-                <div class="experience">
-                    <h3>Software Engineer</h3>
-                    <p class="company">ABC Tech, New York, NY (Jan 2020 - Present)</p>
-                    <ul>
-                        <li>Developed and optimized scalable web applications using React and Node.js.</li>
-                        <li>Collaborated with UX designers to create intuitive user interfaces.</li>
-                        <li>Implemented RESTful APIs to integrate front-end and back-end systems.</li>
-                    </ul>
-                </div>
-                <div class="experience">
-                    <h3>Junior Developer</h3>
-                    <p class="company">XYZ Solutions, Los Angeles, CA (Jun 2017 - Dec 2019)</p>
-                    <ul>
-                        <li>Assisted in building responsive websites using modern web technologies.</li>
-                        <li>Performed debugging and code reviews to maintain code quality.</li>
-                        <li>Maintained technical documentation for projects.</li>
-                    </ul>
-                </div>
-            </section>
-
-          
-            <section>
-                <h2>Education</h2>
-                <p class="education-details">
-                    Bachelor of Science in Computer Science<br>
-                    University of California, Los Angeles (UCLA)<br>
-                    Graduated: May 2017
-                </p>
-            </section>
-
-          
-            <section>
-                <h2>Projects</h2>
-                <ul>
-                    <li>
-                        <strong>Portfolio Website:</strong> Created a responsive portfolio to showcase skills and projects, using React and CSS animations.
-                    </li>
-                    <li>
-                        <strong>E-commerce Platform:</strong> Designed and developed an end-to-end e-commerce platform with secure payment integration.
-                    </li>
-                </ul>
-            </section>
-        </div>
+  <div class="resume-container">
+    <div class="header">
+      <h1 class="editable">John Doe</h1>
+      <p class="editable">Email: john.doe@example.com | Phone: (123) 456-7890 | Location: New York, USA</p>
     </div>
+    <div class="content">
+      <section class="editable">
+        <h2>Summary</h2>
+        <p>Experienced Software Engineer with 8 years of expertise in developing robust web applications and scalable backend systems. Proficient in Java, Python, cloud computing technologies, and a proven track record of delivering high-quality solutions.</p>
+      </section>
+      <section class="editable">
+        <h2>Work Experience</h2>
+        <p><strong>Senior Software Engineer</strong> - ABC Tech Solutions (2018 - Present)</p>
+        <ul>
+          <li>Designed and implemented a cloud-based CRM system, improving customer data access by 40%.</li>
+          <li>Led a team of 5 engineers in migrating legacy systems to microservices architecture.</li>
+          <li>Optimized database performance, reducing query response time by 30%.</li>
+        </ul>
+        <p><strong>Software Developer</strong> - XYZ Innovations (2015 - 2018)</p>
+        <ul>
+          <li>Developed an e-commerce platform that increased client sales by 25%.</li>
+          <li>Collaborated with UX designers to enhance user experience on mobile applications.</li>
+          <li>Maintained and upgraded the backend system for 99.9% uptime.</li>
+        </ul>
+      </section>
+      <section class="editable">
+        <h2>Education</h2>
+        <p><strong>Master of Science in Computer Science</strong> - Stanford University (2015)</p>
+        <p><strong>Bachelor of Science in Information Technology</strong> - MIT (2013)</p>
+      </section>
+      <section class="editable">
+        <h2>Skills</h2>
+        <p>Java, Python, JavaScript, AWS, Docker, Kubernetes, Microservices, Agile Development, REST APIs, SQL, Git</p>
+      </section>
+      <section class="editable">
+        <h2>Projects</h2>
+        <p><strong>Inventory Management System</strong> - Developed a scalable inventory tracking application using Python and Flask, serving over 1,000 users.</p>
+        <p><strong>Social Media Analytics Tool</strong> - Built a real-time analytics dashboard using JavaScript and Node.js, helping clients monitor engagement metrics.</p>
+      </section>
+      <section class="editable">
+        <h2>Certifications</h2>
+        <p>AWS Certified Solutions Architect</p>
+        <p>Certified Kubernetes Administrator (CKA)</p>
+        <p>Google Cloud Professional Data Engineer</p>
+      </section>
+      <section class="editable">
+        <h2>Awards</h2>
+        <p><strong>Employee of the Year</strong> - ABC Tech Solutions (2021)</p>
+        <p><strong>Best Innovation Award</strong> - XYZ Innovations (2017)</p>
+      </section>
+      <section class="editable">
+        <h2>Languages</h2>
+        <p>English (Fluent), Spanish (Intermediate), French (Basic)</p>
+      </section>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
